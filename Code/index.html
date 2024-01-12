@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SR Books</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container">
+        <a class="navbar-brand">S.R. Books</a>
+        <form class="form-inline my-2 my-lg-0">
+          <input
+            class="form-control mr-sm-2 mx-2"
+            type="search"
+            placeholder="Search Book"
+            aria-label="Search"
+          />
+          <button class="btn btn-outline-primary my-2 my-sm-0" type="submit">
+            Search
+          </button>
+        </form>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a class="nav-link">Home</a>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" id="navbarDropdown">
+                Categories
+              </a>
+              <div class="dropdown-menu">
+                <a class="dropdown-item">Fiction</a>
+                <a class="dropdown-item">Non-Fiction</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item">Adventure stories</a>
+                <a class="dropdown-item">Classics</a>
+                <a class="dropdown-item">Historical fiction</a>
+                <a class="dropdown-item">Poetry</a>
+                <a class="dropdown-item">Biography</a>
+                <a class="dropdown-item">Novel</a>
+              </div>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" id="navbarDropdown">
+                Gerne
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item">Drama</a>
+                <a class="dropdown-item">Crime</a>
+                <a class="dropdown-item">Fantasy</a>
+                <a class="dropdown-item">Love Story</a>
+                <a class="dropdown-item">Sci-fi</a>
+                <a class="dropdown-item">Horror</a>
+                <a class="dropdown-item">Mystery</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item">Something else here</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container mt-5">
+      <!-- Bootstrap Jumbotron -->
+      <div class="jumbotron text-center">
+        <h1 class="display-4">Welcome to The S.R. Books</h1>
+        <hr />
+        <p class="lead">
+          Discover Endless Worlds: Your Ultimate Book Destination
+        </p>
+      </div>
+      <br />
+
+      <!-- 1st Carousel -->
+      <div id="myCarousel" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item">
+            <img
+              src="images/bookdisplay1.jpg"
+              class="d-block w-100"
+              alt="Carousel Image 1"
+            />
+          </div>
+          <div class="carousel-item active">
+            <img
+              src="images/bookdisplay3.jpg"
+              class="d-block w-100"
+              alt="Carousel Image 3"
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="images/bookdisplay4.jpg"
+              class="d-block w-100"
+              alt="Carousel Image 4"
+            />
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#myCarousel" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        </a>
+        <a class="carousel-control-next" href="#myCarousel" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        </a>
+      </div>
+
+      <!-- Bootstrap 1st Card  -->
+      <div class="row">
+        <h2>Now Trending</h2>
+        <!-- book 1 -->
+        <div class="col-md-2">
+          <div class="card">
+            <img
+              src="images/newbook1.jpg"
+              class="card-img-top"
+              alt="The Silent Garden"
+            />
+            <div class="card-body">
+              <h5 class="card-title">The Silent Garden</h5>
+              <p class="card-text">Price: 2000 Rs.</p>
+              <a
+                class="link"
+                type="link"
+                data-toggle="collapse"
+                data-target="#collapseContent"
+                aria-expanded="false"
+                aria-controls="collapseContent"
+              >
+                Read Description
+              </a>
+              <!-- Collapsible Content -->
+              <div class="collapse" id="collapseContent">
+                <p>
+                  A gripping psychological thriller that explores the dark
+                  secrets hidden within a seemingly tranquil neighborhood. As
+                  the mystery unravels, readers are taken on a suspenseful
+                  journey that challenges perceptions and leaves them
+                  questioning the very nature of silence.
+                </p>
+              </div>
+              <br />
+              <a href="#" class="btn btn-primary">Add To Cart</a>
+            </div>
+          </div>
+        </div>
+        <!-- book 2 -->
+        <div class="col-md-2">
+          <div class="card">
+            <img
+              src="images/newbook2.jpg"
+              class="card-img-top"
+              alt="Placeholder Image"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Echoes of Eternity"</h5>
+              <p class="card-text">Price: 2500 Rs.</p>
+              <a
+                class="link"
+                type="link"
+                data-toggle="collapse"
+                data-target="#collapseContent2"
+                aria-expanded="false"
+                aria-controls="collapseContent2"
+              >
+                Read Description
+              </a>
+              <!-- Collapsible Content -->
+              <div class="collapse" id="collapseContent2">
+                <p>
+                  A fantasy epic set in a world where magic and technology
+                  collide. Follow the journey of a reluctant hero as they embark
+                  on a quest to save their realm from an ancient evil. Filled
+                  with rich world-building and unforgettable characters.
+                </p>
+              </div>
+              <br />
+              <a href="#" class="btn btn-primary">Add To Cart</a>
+            </div>
+          </div>
+        </div>
+        <!-- book 3 -->
+        <div class="col-md-2">
+          <div class="card">
+            <img
+              src="images/newbook6.jpg"
+              class="card-img-top"
+              alt="The Art of Connection"
+            />
+            <div class="card-body">
+              <h5 class="card-title">The Art of Connection</h5>
+              <p class="card-text">Price: 1700 Rs.</p>
+              <a
+                class="link"
+                type="link"
+                data-toggle="collapse"
+                data-target="#collapseContent3"
+                aria-expanded="false"
+                aria-controls="collapseContent3"
+              >
+                Read Description
+              </a>
+              <!-- Collapsible Content -->
+              <div class="collapse" id="collapseContent3">
+                <p>
+                  A non-fiction exploration of the power of human connection in
+                  the digital age. Drawing on scientific research and real-life
+                  stories, this book provides practical insights on fostering
+                  meaningful relationships in an increasingly interconnected but
+                  sometimes isolating world.
+                </p>
+              </div>
+              <br />
+              <a href="#" class="btn btn-primary">Add To Cart</a>
+            </div>
+          </div>
+        </div>
+        <!-- book 4 -->
+        <div class="col-md-2">
+          <div class="card">
+            <img
+              src="images/newbook3.jpg"
+              class="card-img-top"
+              alt="Lost in Time"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Lost in Time</h5>
+              <p class="card-text">Price: 2250 Rs.</p>
+              <a
+                class="link"
+                type="link"
+                data-toggle="collapse"
+                data-target="#collapseContent4"
+                aria-expanded="false"
+                aria-controls="collapseContent4"
+              >
+                Read Description
+              </a>
+              <!-- Collapsible Content -->
+              <div class="collapse" id="collapseContent4">
+                <p>
+                  An enchanting time-travel romance that weaves together love,
+                  history, and destiny. The protagonists find themselves
+                  entangled in a web of temporal twists, facing challenges that
+                  test the boundaries of love across centuries.
+                </p>
+              </div>
+              <br />
+              <a href="#" class="btn btn-primary">Add To Cart</a>
+            </div>
+          </div>
+        </div>
+        <!-- book 5 -->
+        <div class="col-md-2">
+          <div class="card">
+            <img
+              src="images/newbook4.jpg"
+              class="card-img-top"
+              alt="Mindful Living: Embracing the Present"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Mindful Living: Embracing the Present</h5>
+              <p class="card-text">Price: 1800 Rs.</p>
+              <a
+                class="link"
+                type="link"
+                data-toggle="collapse"
+                data-target="#collapseContent5"
+                aria-expanded="false"
+                aria-controls="collapseContent5"
+              >
+                Read Description
+              </a>
+              <!-- Collapsible Content -->
+              <div class="collapse" id="collapseContent5">
+                <p>
+                  A guide to cultivating mindfulness in everyday life. This book
+                  offers practical tips, exercises, and reflections to help
+                  readers find peace and fulfillment in the present moment,
+                  fostering a deeper connection with themselves and the world
+                  around them.
+                </p>
+              </div>
+              <br />
+              <a href="#" class="btn btn-primary">Add To Cart</a>
+            </div>
+          </div>
+        </div>
+        <!-- book 6 -->
+        <div class="col-md-2">
+          <div class="card">
+            <img
+              src="images/newbook5.jpg"
+              class="card-img-top"
+              alt="Quantum Paradox"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Quantum Paradox</h5>
+              <p class="card-text">Price: 1500 Rs.</p>
+              <a
+                class="link"
+                type="link"
+                data-toggle="collapse"
+                data-target="#collapseContent6"
+                aria-expanded="false"
+                aria-controls="collapseContent6"
+              >
+                Read Description
+              </a>
+              <!-- Collapsible Content -->
+              <div class="collapse" id="collapseContent6">
+                <p>
+                  In a near-future world where quantum technology has reshaped
+                  reality, a brilliant physicist stumbles upon a hidden code
+                  that could unravel the fabric of the universe itself. As she
+                  races against time, she must confront the ethical implications
+                  of her discovery and navigate a web of intrigue that spans
+                  dimensions.
+                </p>
+              </div>
+              <br />
+              <a href="#" class="btn btn-primary">Add To Cart</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 2st Carousel -->
+      <div id="myCarousel2" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item">
+            <img
+              src="images/bookdisplay5.jpg"
+              class="d-block w-100"
+              alt="Carousel Image 1"
+            />
+          </div>
+          <div class="carousel-item active">
+            <img
+              src="images/bookdisplay6.jpg"
+              class="d-block w-100"
+              alt="Carousel Image 3"
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="images/bookdisplay7.jpg"
+              class="d-block w-100"
+              alt="Carousel Image 4"
+            />
+          </div>
+        </div>
+        <a
+          class="carousel-control-prev"
+          href="#myCarousel2"
+          role="button"
+          data-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        </a>
+        <a
+          class="carousel-control-next"
+          href="#myCarousel2"
+          role="button"
+          data-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        </a>
+      </div>
+
+      <!-- Bootstrap 2st Card  -->
+      <div class="row">
+        <h2>Best Sellers</h2>
+        <!-- book 1 -->
+        <div class="col-md-2">
+          <div class="card">
+            <img
+              src="images/newbook2_1.jpg"
+              class="card-img-top"
+              alt="The Immortals of Meluha"
+            />
+            <div class="card-body">
+              <h5 class="card-title">The Immortals of Meluha</h5>
+              <p class="card-text">Price: 450 Rs.</p>
+              <a
+                class="link"
+                type="link"
+                data-toggle="collapse"
+                data-target="#collapseContent21"
+                aria-expanded="false"
+                aria-controls="collapseContent21"
+              >
+                Read Description
+              </a>
+              <!-- Collapsible Content -->
+              <div class="collapse" id="collapseContent21">
+                <p>
+                  A mythological fiction novel that follows the journey of
+                  Shiva, a Tibetan tribal leader, who is invited to Meluha and
+                  discovers his destiny.
+                </p>
+              </div>
+              <br />
+              <a href="#" class="btn btn-primary">Add To Cart</a>
+            </div>
+          </div>
+        </div>
+        <!-- book 2 -->
+        <div class="col-md-2">
+          <div class="card">
+            <img
+              src="images/newbook2_2.jpg"
+              class="card-img-top"
+              alt="The God of Small Things"
+            />
+            <div class="card-body">
+              <h5 class="card-title">The God of Small Things</h5>
+              <p class="card-text">Price: 600 Rs.</p>
+              <a
+                class="link"
+                type="link"
+                data-toggle="collapse"
+                data-target="#collapseContent22"
+                aria-expanded="false"
+                aria-controls="collapseContent22"
+              >
+                Read Description
+              </a>
+              <!-- Collapsible Content -->
+              <div class="collapse" id="collapseContent22">
+                <p>
+                  A Booker Prize-winning novel that explores the complex lives
+                  of two twins, Rahel and Estha, in the Indian state of Kerala.
+                </p>
+              </div>
+              <br />
+              <a href="#" class="btn btn-primary">Add To Cart</a>
+            </div>
+          </div>
+        </div>
+        <!-- book 3 -->
+        <div class="col-md-2">
+          <div class="card">
+            <img
+              src="images/newbook2_3.jpg"
+              class="card-img-top"
+              alt="My Name is Red"
+            />
+            <div class="card-body">
+              <h5 class="card-title">My Name is Red</h5>
+              <p class="card-text">Price: 700 Rs.</p>
+              <a
+                class="link"
+                type="link"
+                data-toggle="collapse"
+                data-target="#collapseContent23"
+                aria-expanded="false"
+                aria-controls="collapseContent23"
+              >
+                Read Description
+              </a>
+              <!-- Collapsible Content -->
+              <div class="collapse" id="collapseContent23">
+                <p>
+                  A historical novel set in 16th-century Istanbul, blending art,
+                  love, and mystery as a series of murders unfold among the
+                  city's miniature painters.
+                </p>
+              </div>
+              <br />
+              <a href="#" class="btn btn-primary">Add To Cart</a>
+            </div>
+          </div>
+        </div>
+        <!-- book 4 -->
+        <div class="col-md-2">
+          <div class="card">
+            <img
+              src="images/newbook2_4.jpeg"
+              class="card-img-top"
+              alt="The White Tiger"
+            />
+            <div class="card-body">
+              <h5 class="card-title">The White Tiger</h5>
+              <p class="card-text">Price: 225 Rs.</p>
+              <a
+                class="link"
+                type="link"
+                data-toggle="collapse"
+                data-target="#collapseContent24"
+                aria-expanded="false"
+                aria-controls="collapseContent24"
+              >
+                Read Description
+              </a>
+              <!-- Collapsible Content -->
+              <div class="collapse" id="collapseContent24">
+                <p>
+                  A darkly humorous novel that follows the life of Balram
+                  Halwai, a driver from a rural village who rises to success in
+                  the city of Bangalore.
+                </p>
+              </div>
+              <br />
+              <a href="#" class="btn btn-primary">Add To Cart</a>
+            </div>
+          </div>
+        </div>
+        <!-- book 5 -->
+        <div class="col-md-2">
+          <div class="card">
+            <img
+              src="images/newbook2_5.jpg"
+              class="card-img-top"
+              alt="Half Girlfriend"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Half Girlfriend</h5>
+              <p class="card-text">Price: 800 Rs.</p>
+              <a
+                class="link"
+                type="link"
+                data-toggle="collapse"
+                data-target="#collapseContent25"
+                aria-expanded="false"
+                aria-controls="collapseContent25"
+              >
+                Read Description
+              </a>
+              <!-- Collapsible Content -->
+              <div class="collapse" id="collapseContent25">
+                <p>
+                  A romantic novel that explores the relationship between a
+                  Bihari boy and a Delhi girl, dealing with the complexities of
+                  modern relationships.
+                </p>
+              </div>
+              <br />
+              <a href="#" class="btn btn-primary">Add To Cart</a>
+            </div>
+          </div>
+        </div>
+        <!-- book 6 -->
+        <div class="col-md-2">
+          <div class="card">
+            <img
+              src="images/newbook2_6.jpeg"
+              class="card-img-top"
+              alt="Train to Pakistan"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Train to Pakistan</h5>
+              <p class="card-text">Price: 500 Rs.</p>
+              <a
+                class="link"
+                type="link"
+                data-toggle="collapse"
+                data-target="#collapseContent26"
+                aria-expanded="false"
+                aria-controls="collapseContent26"
+              >
+                Read Description
+              </a>
+              <!-- Collapsible Content -->
+              <div class="collapse" id="collapseContent26">
+                <p>
+                  A historical novel set during the partition of India,
+                  exploring the impact of religious and political tensions on a
+                  small village.
+                </p>
+              </div>
+              <br />
+              <a href="#" class="btn btn-primary">Add To Cart</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
